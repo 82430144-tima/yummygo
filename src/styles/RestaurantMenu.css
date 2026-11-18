@@ -1,0 +1,46 @@
+.restaurant-container {
+  background-color: #FFBDC5;
+  padding: 30px;
+  min-height: 80vh;
+}
+
+.back-btn {
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+.restaurant-card {
+  min-height: 400px;
+  border: 2px solid #670626;
+  border-radius: 10px;
+}
+
+.restaurant-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.add-cart-btn {
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  margin-right: 10px;
+}
+
+.add-cart-btn:hover {
+  background-color: #FFBDC5;
+  color: #670626;
+}
+.add-cart-btn {
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  margin-right: 10px;
+}

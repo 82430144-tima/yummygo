@@ -1,0 +1,110 @@
+/* ===== Container ===== */
+.menu-container {
+  background-color: #FFBDC5;
+  padding: 30px;
+  min-height: calc(100vh - 80px);
+}
+
+/* ===== Titles ===== */
+.menu-title {
+  color: #670626;
+  font-weight: bold;
+}
+
+.menu-subtitle {
+  color: #7a3a4d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu-count {
+  color: #670626;
+  font-weight: 500;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* ===== Cards ===== */
+.card {
+  min-height: 480px;
+  border: 2px solid #670626;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(103, 6, 38, 0.12);
+}
+
+.menu-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(103, 6, 38, 0.22);
+}
+
+.card-img-top {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  padding: 10px;
+  background: #fff8fa;
+  border-bottom: 1px solid rgba(103, 6, 38, 0.1);
+}
+
+/* ===== Buttons ===== */
+.menu-btn {
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, transform 0.15s;
+}
+
+.menu-btn:hover {
+  background-color: #FFBDC5;
+  color: #670626;
+}
+
+.menu-btn:active {
+  transform: scale(0.97);
+}
+
+/* ===== Back button ===== */
+.back-btn {
+  background: transparent;
+  color: #670626;
+  border: 2px solid #670626;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.back-btn:hover {
+  background: #670626;
+  color: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .menu-container {
+    padding: 20px 12px;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .card-img-top {
+    height: 220px;
+  }
+
+  .menu-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,94 @@
+.navbar {
+  background-color: #670626;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+.leftSide img {
+  height: 50px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #FFBDC5;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.cartLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cartBadge {
+  background-color: white;
+  color: #670626;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 7px;
+  margin-left: 5px;
+}
+
+.menuButton {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.menuButton svg {
+  font-size: 32px;
+}
+
+.hiddenLinks {
+  display: none;
+}
+
+#open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #670626;
+  padding: 15px 0;
+  z-index: 99;
+  gap: 10px;
+}
+
+#open a {
+  margin: 0 20px;
+}
+
+#close {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+  .rightSide {
+    display: none;
+  }
+}

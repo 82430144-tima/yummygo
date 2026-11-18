@@ -1,0 +1,119 @@
+/* ===== Container ===== */
+.contact-container {
+  background-color: #FFBDC5;
+  padding: 50px 20px;
+  min-height: 80vh;
+}
+
+/* ===== Header ===== */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-title {
+  color: #670626;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.contact-subtitle {
+  color: #670626;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* ===== Cards ===== */
+.contact-card {
+  background: white;
+  border: 2px solid #670626;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(103, 6, 38, 0.25);
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #FFBDC5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-card:hover .contact-icon {
+  background: #670626;
+  transform: scale(1.1) rotate(-8deg);
+}
+
+.contact-card h4 {
+  color: #670626;
+  font-weight: bold;
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.contact-card p {
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0;
+  word-break: break-word;
+}
+
+/* ===== Bottom closing strip ===== */
+.contact-strip {
+  background: #670626;
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-strip h3 {
+  margin: 0 0 6px;
+  font-weight: bold;
+}
+
+.contact-strip p {
+  margin: 0;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px 12px;
+  }
+
+  .contact-title {
+    font-size: 1.7rem;
+  }
+
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .contact-strip {
+    padding: 22px 18px;
+  }
+
+  .contact-strip h3 {
+    font-size: 1.1rem;
+  }
+}

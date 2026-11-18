@@ -1,0 +1,264 @@
+.fav-container {
+  background-color: #FFBDC5;
+  padding: 50px 20px;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.fav-container::before,
+.fav-container::after {
+  content: "❤️";
+  position: absolute;
+  font-size: 10rem;
+  opacity: 0.07;
+  color: #670626;
+  pointer-events: none;
+}
+.fav-container::before {
+  top: 30px;
+  left: 40px;
+  transform: rotate(-15deg);
+}
+.fav-container::after {
+  bottom: 20px;
+  right: 50px;
+  transform: rotate(15deg);
+}
+
+.fav-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.fav-title {
+  color: #670626;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.fav-subtitle {
+  color: #670626;
+  font-size: 1.05rem;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.fav-subtitle strong {
+  background: #670626;
+  color: #FFBDC5;
+  padding: 1px 10px;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.fav-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 35px 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+}
+
+.fav-polaroid {
+  background: white;
+  padding: 14px 14px 55px;
+  border-radius: 6px;
+  box-shadow:
+    0 8px 18px rgba(103, 6, 38, 0.18),
+    0 2px 4px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+.fav-polaroid:hover {
+  transform: rotate(0deg) translateY(-10px) scale(1.04) !important;
+  box-shadow:
+    0 18px 32px rgba(103, 6, 38, 0.28),
+    0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.fav-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #fff8fa;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fav-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+  transition: transform 0.4s ease;
+}
+
+.fav-polaroid:hover .fav-photo img {
+  transform: scale(1.08);
+}
+
+.fav-caption {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 60px;
+  text-align: left;
+}
+
+.fav-caption h5 {
+  color: #670626;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fav-price {
+  color: #8a0a33;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.fav-heart-badge {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background: white;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(103, 6, 38, 0.25);
+  z-index: 2;
+  animation: heartbeat 1.6s infinite;
+}
+
+.fav-remove {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #FFBDC5;
+  color: #670626;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fav-remove:hover {
+  background: #670626;
+  transform: scale(1.15) rotate(-12deg);
+}
+
+.fav-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.fav-btn {
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, transform 0.2s;
+}
+
+.fav-btn:hover {
+  background-color: white;
+  color: #670626;
+  transform: translateY(-3px);
+}
+
+.fav-empty {
+  text-align: center;
+  padding: 70px 20px;
+  max-width: 520px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(103, 6, 38, 0.18);
+}
+
+.fav-empty-heart {
+  font-size: 5rem;
+  margin-bottom: 15px;
+  animation: heartbeat 1.4s infinite;
+}
+
+.fav-empty-title {
+  color: #670626;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fav-empty-text {
+  color: #670626;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+
+@media (max-width: 576px) {
+  .fav-container {
+    padding: 30px 15px;
+  }
+
+  .fav-wall {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 25px 20px;
+  }
+
+  .fav-title {
+    font-size: 1.6rem;
+  }
+
+  .fav-polaroid {
+    padding: 10px 10px 48px;
+  }
+
+  .fav-caption {
+    right: 50px;
+  }
+
+  .fav-caption h5 {
+    font-size: 0.9rem;
+  }
+
+  .fav-heart-badge {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    top: -10px;
+    right: -10px;
+  }
+
+  .fav-remove {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+}

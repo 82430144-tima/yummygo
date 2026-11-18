@@ -1,0 +1,205 @@
+/* ===== Container ===== */
+.order-container {
+  background-color: #FFBDC5;
+  padding: 40px 20px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ===== Form card ===== */
+.order-form-card {
+  background: white;
+  border: 2px solid #670626;
+  border-radius: 18px;
+  padding: 30px;
+  width: 100%;
+  max-width: 540px;
+  box-shadow: 0 8px 20px rgba(103, 6, 38, 0.15);
+}
+
+.order-title {
+  color: #670626;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.order-subtitle {
+  color: #670626;
+  opacity: 0.75;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ===== Fields ===== */
+.order-field {
+  margin-bottom: 16px;
+}
+
+.order-field label {
+  display: block;
+  color: #670626;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.order-input {
+  border: 2px solid #670626;
+  border-radius: 10px;
+  padding: 12px 14px;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #670626;
+  background: white;
+  box-sizing: border-box;
+  transition: box-shadow 0.25s;
+}
+
+.order-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(103, 6, 38, 0.15);
+}
+
+.order-input::placeholder {
+  color: #d0a5b5;
+}
+
+/* ===== Footer ===== */
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-top: 18px;
+  margin-top: 18px;
+  border-top: 2px dashed rgba(103, 6, 38, 0.2);
+}
+
+.order-total {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-label {
+  color: #670626;
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+.total-amount {
+  color: #670626;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.order-btn {
+  background-color: #670626;
+  color: white;
+  border: 2px solid #670626;
+  border-radius: 20px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+}
+
+.order-btn:hover {
+  background-color: white;
+  color: #670626;
+  transform: translateY(-2px);
+}
+
+/* ===== Success card ===== */
+.order-success-card {
+  background: white;
+  border: 2px solid #670626;
+  border-radius: 18px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(103, 6, 38, 0.2);
+}
+
+.success-emoji {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.success-msg {
+  color: #670626;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+}
+
+.eta-label {
+  color: #670626;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.countdown {
+  color: #670626;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.progress-wrap {
+  background: #FFBDC5;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background: #670626;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s linear;
+}
+
+.eta-note {
+  color: #670626;
+  opacity: 0.75;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+  .order-container {
+    padding: 25px 12px;
+  }
+
+  .order-form-card,
+  .order-success-card {
+    padding: 22px 18px;
+  }
+
+  .countdown {
+    font-size: 2.8rem;
+  }
+
+  .order-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .order-total {
+    align-items: center;
+  }
+
+  .order-btn {
+    width: 100%;
+  }
+}
