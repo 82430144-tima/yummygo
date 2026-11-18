@@ -1,11 +1,10 @@
 # YummyGo 🍔
 
-A modern food delivery web application built with React that lets users
-browse restaurants, add items to a cart, save favorites, and track their
-order with a live countdown timer.
+A modern food delivery web application built with React that lets users browse restaurants, add items to a cart, save favorites, and track their order with a live countdown timer.
 
 **Course:** CSCI426 – Advanced Web Programming  
 **Team:** Fatima Arar & Nour Hassiry  
+**Instructor:** Dr. Mohamad Janbein  
 **Phase:** 1 (Frontend)
 
 ---
@@ -53,9 +52,15 @@ git clone https://github.com/82430144-tima/yummygo.git
 cd yummygo
 npm install
 npm start
-The app runs at http://localhost:3000.
+```
 
-📂 Project Structure
+The app runs at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 📂 Project Structure
+
+```
 yummygo/
 ├── public/
 │   ├── images/       Restaurant and food images
@@ -68,123 +73,113 @@ yummygo/
 │   ├── styles/       CSS files for each page
 │   └── App.js        Routes and global state (cart, favorites)
 └── package.json
-
-📸 Screenshots
-🏠 Home Page
-https://github.com/82430144-tima/yummygo-/raw/main/screens/home.jpeg
-
-🍔 Menu Page
-Top View
-https://github.com/82430144-tima/yummygo-/raw/main/screens/menu1.jpeg
-
-Bottom View
-https://github.com/82430144-tima/yummygo-/raw/main/screens/menu2.jpeg
-
-🛒 Cart Page
-Top View
-https://github.com/82430144-tima/yummygo-/raw/main/screens/cart.jpeg
-
-Bottom View
-https://github.com/82430144-tima/yummygo-/raw/main/screens/cart2.png
-
-❤️ Favorites Page (Empty State)
-https://github.com/82430144-tima/yummygo-/raw/main/screens/favorite.jpeg
-
-📦 Order Page
-Order Form
-https://github.com/82430144-tima/yummygo-/raw/main/screens/order1.jpeg
-
-Order Confirmation with Live Countdown
-https://github.com/82430144-tima/yummygo-/raw/main/screens/order2.jpeg
-
-📞 Contact Page
-Top View
-https://github.com/82430144-tima/yummygo-/raw/main/screens/contact1.jpeg
-
-Bottom View
-https://github.com/82430144-tima/yummygo-/raw/main/screens/contact2.jpeg
-
-ℹ️ About Page
-https://github.com/82430144-tima/yummygo-/raw/main/screens/about.jpeg
-
+```
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](public/screens/home.jpeg)
+
+### 🍔 Menu Page
+**Top View**
+
+![Menu Top](public/screens/menu1.jpeg)
+
+**Bottom View**
+
+![Menu Bottom](public/screens/menu2.jpeg)
+
+### 🛒 Cart Page
+**Top View**
+
+![Cart Top](public/screens/cart.jpeg)
+
+**Bottom View**
+
+![Cart Bottom](public/screens/cart2.png)
+
+### ❤️ Favorites Page (Empty State)
+![Favorites](public/screens/favorite.jpeg)
+
+### 📦 Order Page
+**Order Form**
+
+![Order Form](public/screens/order1.jpeg)
+
+**Order Confirmation with Live Countdown**
+
+![Order Confirmation](public/screens/order2.jpeg)
+
+### 📞 Contact Page
+**Top View**
+
+![Contact Top](public/screens/contact1.jpeg)
+
+**Bottom View**
+
+![Contact Bottom](public/screens/contact2.jpeg)
+
+### ℹ️ About Page
+![About](public/screens/about.jpeg)
+
 ---
 
-🎨 Design System
-Primary color: #670626 (deep wine)
+## 🎨 Design System
 
-Background color: #FFBDC5 (soft pink)
+- **Primary color:** `#670626` (deep wine)
+- **Background color:** `#FFBDC5` (soft pink)
+- **Typography:** Bootstrap defaults + custom weights
+- **Border radius:** 15–20px (soft, friendly feel)
+- Consistent theme across all pages with per-page unique UI patterns
 
-Typography: Bootstrap defaults + custom weights
+---
 
-Border radius: 15–20px (soft, friendly feel)
+## 🙏 Credits
 
-Consistent theme across all pages with per-page unique UI patterns
+- **Food and restaurant images:** Sourced from publicly available educational resources (Pinterest / Google Images) for educational purposes only
+- **Intro video:** Custom-made by Nour Hassiry
+- **Libraries used:** React, React Router DOM, Bootstrap (all open source)
+- **Icons:** Emoji-based, no external icon library required
 
-🙏 Credits
-Food and restaurant images: Sourced from publicly available educational resources (Pinterest / Google Images) for educational purposes only
+---
 
-Intro video: Custom-made by Nour Hassiry
+## 👥 Team Contributions
 
-Libraries used: React, React Router DOM, Bootstrap (all open source)
+YummyGo was developed as a true partnership, where both team members contributed equally across all stages of the project — from ideation to deployment. Every feature was discussed, built, and reviewed together.
 
-Icons: Emoji-based, no external icon library required
+### 👩‍💻 Nour Hassiry
+- **Project concept** – Proposed the YummyGo food delivery idea and helped define the feature scope
+- **Home page** – Built the landing page with the intro video and welcome content
+- **Menu page** – Implemented the categories and restaurant browsing structure
+- **RestaurantsMenu component** – Developed the dynamic restaurant page with dish rendering
+- **Design system** – Chose the deep wine (`#670626`) and soft pink (`#FFBDC5`) palette that defines the brand
+- **Contact page** – Designed the contact information cards
+- **Responsive testing** – Tested the layout on tablet and mobile breakpoints
+- **Presentation prep** – Prepared the demo flow and slides content
 
-👥 Team Contributions
-YummyGo was developed as a true partnership, where both team members
-contributed equally across all stages of the project — from ideation to
-deployment. Every feature was discussed, built, and reviewed together.
+### 👩‍💻 Fatima Arar
+- **Cart page** – Implemented item management, deletion, and live total calculation
+- **Favorites page** – Designed the polaroid-style favorites wall with hover animations
+- **Order page** – Built form validation, live countdown timer, and animated progress bar
+- **About page** – Designed the stats section and feature cards
+- **State management** – Refactored `App.js` to centralize cart and favorites logic
+- **Git & GitHub** – Set up version control with a structured commit history
+- **Deployment** – Deployed the final application on Netlify
+- **Documentation** – Wrote the README, captured UI screenshots, and prepared the project report
 
-👩‍💻 Nour Hassiry
-Project concept – Proposed the YummyGo food delivery idea and helped define the feature scope
+### 🤝 Built Together
+- **UI/UX refinement** – Both members reviewed and improved every page's layout together
+- **Cross-browser & device testing** – Tested on Chrome, Edge, and mobile devices
+- **Bug fixing** – Debugged issues collaboratively throughout development
+- **Feature planning** – Jointly decided what to build, how to structure it, and how each page should feel
+- **Final polish** – Reviewed the complete project together before submission
+- **Report & presentation** – Co-authored the project report and prepared the presentation slides
 
-Home page – Built the landing page with the intro video and welcome content
+---
 
-Menu page – Implemented the categories and restaurant browsing structure
+## 📄 License
 
-RestaurantsMenu component – Developed the dynamic restaurant page with dish rendering
-
-Design system – Chose the deep wine (#670626) and soft pink (#FFBDC5) palette that defines the brand
-
-Contact page – Designed the contact information cards
-
-Responsive testing – Tested the layout on tablet and mobile breakpoints
-
-Presentation prep – Prepared the demo flow and slides content
-
-👩‍💻 Fatima Arar
-Cart page – Implemented item management, deletion, and live total calculation
-
-Favorites page – Designed the polaroid-style favorites wall with hover animations
-
-Order page – Built form validation, live countdown timer, and animated progress bar
-
-About page – Designed the stats section and feature cards
-
-State management – Refactored App.js to centralize cart and favorites logic
-
-Git & GitHub – Set up version control with a structured commit history
-
-Deployment – Deployed the final application on Netlify
-
-Documentation – Wrote the README, captured UI screenshots, and prepared the project report
-
-🤝 Built Together
-UI/UX refinement – Both members reviewed and improved every page's layout together
-
-Cross-browser & device testing – Tested on Chrome, Edge, and mobile devices
-
-Bug fixing – Debugged issues collaboratively throughout development
-
-Feature planning – Jointly decided what to build, how to structure it, and how each page should feel
-
-Final polish – Reviewed the complete project together before submission
-
-Report & presentation – Co-authored the project report and prepared the presentation slides
-
-📄 License
-This project was developed for CSCI426 – Advanced Web Programming (Phase 1)
-at LIU – Lebanese International University.
+This project was developed for CSCI426 – Advanced Web Programming (Phase 1) at LIU – Lebanese International University.  
 For educational purposes only.
