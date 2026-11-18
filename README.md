@@ -69,44 +69,48 @@ yummygo/
 │   └── App.js        Routes and global state (cart, favorites)
 └── package.json
 
-📸 Screenshots
-🏠 Home Page
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/home.png
+## 📸 Screenshots
 
-🍔 Menu Page
-Top View
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/menu1.png
+### 🏠 Home Page
+![Home](screens/home.jpeg)
 
-Bottom View
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/menu2.png
+### 🍔 Menu Page
 
-🛒 Cart Page
-Top View
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/cart.png
+**Top View**
+![Menu Top](screens/menu1.jpeg)
 
-Bottom View
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/cart2.png
+**Bottom View**
+![Menu Bottom](screens/menu2.jpeg)
 
-❤️ Favorites Page (Empty State)
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/favorite.png
+### 🛒 Cart Page
 
-📦 Order Page
-Order Form
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/order1.png
+**Top View**
+![Cart Top](screens/cart.jpeg)
 
-Order Confirmation with Live Countdown
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/order2.png
+**Bottom View**
+![Cart Bottom](screens/cart2.jpeg)
 
-📞 Contact Page
-Top View
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/contact1.png
+### ❤️ Favorites Page (Empty State)
+![Favorites](screens/favorite.jpeg)
 
-Bottom View
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/contact2.png
+### 📦 Order Page
 
-ℹ️ About Page
-https://raw.githubusercontent.com/82430144-tima/yummygo-/main/screens/about.png
+**Order Form**
+![Order Form](screens/order1.jpeg)
 
+**Order Confirmation with Live Countdown**
+![Order Countdown](screens/order2.jpeg)
+
+### 📞 Contact Page
+
+**Top View**
+![Contact Top](screens/contact1.jpeg)
+
+**Bottom View**
+![Contact Bottom](screens/contact2.jpeg)
+
+### ℹ️ About Page
+![About](screens/about.jpeg)
 ---
 
 ---
