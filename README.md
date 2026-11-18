@@ -80,7 +80,7 @@ yummygo/
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](public/screens/home.jpeg)
+![Home Page](<img width="1260" height="583" alt="home" src="https://github.com/user-attachments/assets/8f9afe9d-035e-4beb-8fd9-73a6c11bd85c" />)
 
 ### 🍔 Menu Page
 **Top View**
